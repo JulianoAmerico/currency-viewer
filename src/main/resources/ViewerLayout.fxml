@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.juliano.gui.ControllerViewer" vgap="10" hgap="5">
+	<padding>
+		<Insets top="5" right="5" bottom="5" left="5"/>
+	</padding>
+	
+	<Label text="Value:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+	<TextField fx:id="textFieldValue" GridPane.columnIndex="1" GridPane.rowIndex="0" prefWidth="180"/>
+	
+	<Label text="Locale:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+	<ChoiceBox fx:id="choiceBoxLocale" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+	
+	<Label text="Result:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+	<Label fx:id="labelResult" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+</GridPane>
+
